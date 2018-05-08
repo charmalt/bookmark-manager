@@ -7,10 +7,9 @@ describe Bookmark do
   describe '#self.all' do
 
     it 'returns hard coded list of bookmarks' do
-      expect(Bookmark.all).to eq [bookmark, bookmark]
+      expect(Bookmark.all).to all(be_instance_of(Bookmark))
     end
 
   end
-
 
 end
