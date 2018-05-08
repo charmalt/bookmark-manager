@@ -5,7 +5,7 @@ class Bookmark
 
   def self.all
     begin
-      con = PG.connect :dbname => 'bookmark_manager', :user => 'samworrall'
+      con = PG.connect :dbname => 'bookmark_manager', :user => 'John'
       con.exec "SELECT * FROM bookmarks"
     end
   end
@@ -13,5 +13,4 @@ class Bookmark
   def initialize(url)
     @url = url
   end
-
 end
