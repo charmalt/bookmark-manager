@@ -5,8 +5,8 @@ describe Bookmark do
   subject(:bookmark) { described_class.new("https://www.makersacademy.com/") }
 
   describe '#self.all' do
-    it 'returns hard coded list of bookmarks' do
-      expect(Bookmark.all).to all(be_instance_of(Bookmark))
+    it 'returns an array' do
+      expect(Bookmark.all).to (be_instance_of(PG::Result))
     end
   end
 

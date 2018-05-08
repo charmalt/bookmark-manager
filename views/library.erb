@@ -1,4 +1,15 @@
-<h1>This is the current library</h1>
-<% @library.each do |site| %>
-  <%= site.url %>
-<% end %>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>This is the current library</h1>
+    <br>
+    <% @library.each do |row| %>
+      <h1><%=row['url']%> </h1>
+    <% end %>
+
+  </body>
+</html>
