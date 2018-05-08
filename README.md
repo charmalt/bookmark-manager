@@ -35,3 +35,13 @@ So that I have control over my bookmarks
 I would like to have an easy interface to manage all this
 
 ```
+
+Domain Model
+------------
+
+- User story 1
+
+Objects:          Messages:
+Bookmark          URL
+
+List              Display
